@@ -30,11 +30,11 @@ $active = 3;
             @endif
         </div>
         <!-- /.card-header -->  
-        <!-- <div class="text-right" style="margin:10px 20px 0px 20px;">
+        <div class="text-right" style="margin:10px 20px 0px 20px;">
             <a href="/users/create" class="btn btn-primary col-sm-5 col-md-2" style="font-size: 12pt;">
                 <i class="fa fa-plus" aria-hidden></i> 
                 Adiconar</a>
-        </div> -->
+        </div>
         <div class="card-body">
             <table id="users_table" class="table table-bordered table-striped">
                 <thead>

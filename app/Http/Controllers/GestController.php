@@ -74,46 +74,7 @@ class GestController extends Controller
      */
     public function update(Request $request, user $user)
     {
-        // echo "ddfdf";
-        //
-        $validated = $request->validate([
-            'name' => 'required|string|max:50',
-            'email' => 'required|string|max:50',
-            'estado' => 'required|string|max:50',
-            'nivelAcesso' => 'string|max:50',
-            'oldPassword' => 'string|max:50',
-            'newPassword' => 'string|max:50',
-            'confirmPassword' => 'string|max:50',
-        ]);
-
-        // var_dump($validated);
-
-        $users = User::all();
-        foreach ($users as $user) {
-            if ($request->email == $user->email and $request->id != $user->id) {
-                return redirect()->back()->with(['mensagem' => 'Falha em actualizar: O número refererência já existe no sistema ']);
-                // echo "email repeat";
-            }
-        }
-        if(!(Hash::check($request->oldPassword, $user->password)) || $request->newPassword != $request->confirmPassword) {
-            echo "password No";
-            return redirect()->back()->with(['mensagem' => 'Falha em actualizar: Senha incorreta ']);
-        }else {
-            echo "Password OK";
-        }
-        $user->name = $request->name;
-        echo $user->name;
-        $user->email = $request->email;
-        $user->estado = $request->estado;
-        $user->nivelAcesso = $request->nivelAcesso;
-        $user->password = Hash::make($request->newPassword);
-        
-        $user->save();
-        if ($user->save()) {
-            return redirect('/gest')->with(['mensagem' => 'Actualizado com sucesso']);
-        } else {
-            return redirect('/gest')->with(['mensagem' => 'Falha ao Actualizar']);
-        }
+       
     }
 
     /**

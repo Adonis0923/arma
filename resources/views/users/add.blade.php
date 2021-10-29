@@ -26,7 +26,7 @@ $active = 4;
         <!-- /.card-header -->
         <div class="card-body">
 
-            <form method="POST" action="/produtos" class="">
+            <form method="POST" action="/users" class="">
                 @csrf
                  <div class="form-row">
                     <div class = 'form-group col-md-3'></div>

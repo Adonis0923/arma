@@ -84,9 +84,9 @@ $active = 6;
                         <td>{{$produtoLinha->mecanismo}}</td>
                         <td>{{$produtoLinha->categoria()->first()->nome}}</td>
                         <td>{{$produtoLinha->preco}}</td>
-                         <td>{{$produtoLinha->quantidade_stoque}}</td>
-                         <td>{{$produtoLinha->validade}}</td>
-                         
+                        <td>{{$produtoLinha->quantidade_stoque}}</td>
+                        <td>{{$produtoLinha->validade}}</td>
+                        <td></td> 
                        
                      
                          <td class="text-center">

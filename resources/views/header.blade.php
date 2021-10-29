@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sistema de Gestão</title>
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -49,7 +50,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="mynavbar">
-        <ul class="navbar-nav me-auto">
+        <ul class="navbar-nav me-auto navbar-right">
           @if($active == 1)
             <li class="nav-item active">
           @else
@@ -136,6 +137,9 @@
             </ul>
           </li>
         </ul>
+        <!-- <div class = 'navbar-nav ms-auto'>
+          <a href = '#' class = 'nav-item nav-link'>Login</a>
+        </div> -->
         <!-- <form class="d-flex" style = 'position:absolute; right:10px; margin-bottom: 0px'>
           <input class="form-control me-2" type="text" placeholder="Search">
           <button class="btn btn-primary" type="button">Search</button>

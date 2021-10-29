@@ -58,6 +58,7 @@
 <script src="{{asset('assets/plugins/datatables-buttons/js/buttons.html5.min.js')}}"></script>
 <script src="{{asset('assets/plugins/datatables-buttons/js/buttons.print.min.js')}}"></script>
 <script src="{{asset('assets/plugins/datatables-buttons/js/buttons.colVis.min.js')}}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
 <script>
@@ -84,16 +85,16 @@
     });
 
     
-    $('.dropdown-toggle').dropdown();
+    // $('.dropdown-toggle').dropdown();
 
-    $(document).on('click', 'body', function(e) {
-      e.stopPropagation();
-      $('.dropdown-menu').removeClass('show');
-    });
-    $('.dropdown-toggle').click(function(e) {
-      $('.dropdown-menu').removeClass('show');
-      $(this).next().addClass('show');
-    })
+    // $(document).on('click', 'body', function(e) {
+    //   e.stopPropagation();
+    //   $('.dropdown-menu').removeClass('show');
+    // });
+    // $('.dropdown-toggle').click(function(e) {
+    //   $('.dropdown-menu').removeClass('show');
+    //   $(this).next().addClass('show');
+    // })
   });
 </script>
 </body>
